@@ -6,9 +6,10 @@
     <title>Triva Game</title>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,400,600,700">
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -18,16 +19,58 @@
     </div>
 
     <form id="trivia-form">
-        <label for="trivia-input">TriviaGame</label>
-        <input type="radio" id="movie-input">
+        <p>Which of these colors did King Henry XIII wear the most often?</p>
+        <div id="q1">
+            <span>
+                <input type="radio" id="a1-1" name="henry8" value="1">
+                <label for="color1">burnt orange</label>
+            </span>
+            <span>
+                <input type="radio" id="a1-2" name="henry8" value="2">
+                <label for="color2">navy blue</label>
+            </span>
+            <span>
+                <input type="radio" id="a1-3" name="henry8" value="3">
+                <label for="color3">turquoise</label>
+            </span>
+            <span>
+                <input type="radio" id="a1-4" name="henry8" value="4">
+                <label for="color3">teal</label>
+            </span>
+        </div>
+        <br>
         <br>
 
-        <!-- This button will trigger our AJAX call -->
-        <input id="check-answers" type="submit" value="Submit Answers">
+        <p>Which of these colors does President Trump wear the most often?</p>
+        <div id="q2">
+            <span>
+                <input type="radio" id="a1-1" name="trump" value="0">
+                <label for="color1">black</label>
+            </span>
+            <span>
+                <input type="radio" id="a1-2" name="trump" value="0">
+                <label for="color2">navy blue</label>
+            </span>
+            <span>
+                <input type="radio" id="a1-3" name="trump" value="0">
+                <label for="color3">black and blue</label>
+            </span>
+            <span>
+                <input type="radio" id="a1-4" name="trump" value="0">
+                <label for="color3">blue</label>
+            </span>
+        </div>
+        <br>
+        <br>
+            <button type="submit">Submit</button>
+            <!-- <input id="check-answers" type="submit" value="Submit Answers"> -->
+        <br>
     </form>
 
-
-
+    <!-- This button will trigger our JS -->
+    </form>
     <script type="text/javascript" src="assets/javascript/app.js"></script>
 
 </body>
+
+</html>
