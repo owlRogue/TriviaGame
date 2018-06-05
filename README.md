@@ -1,12 +1,12 @@
 # JavaScript Assignment 2
 
-### Overview
+<!-- ### Overview
 
 In this assignment, You'll create a Trivia game using JavaScript for the logic and jQuery to manipulate HTML. Be sure to layout this app with valid HTML and stylish CSS.
 
-### Before You Begin
+### Before You Begin -->
 
-1. Create a GitHub repo called `TriviaGame`, then clone the repo to your computer.
+<!-- 1. Create a GitHub repo called `TriviaGame`, then clone the repo to your computer.
 
 2. Create a file inside of the `TriviaGame` folder called `index.html`. This is where you'll mark up all of your HTML.
 3. Don't forget to include a script tag with the jQuery library.
@@ -18,7 +18,7 @@ In this assignment, You'll create a Trivia game using JavaScript for the logic a
    * In your `javascript` folder, create an `app.js` file; here you'll write all of your JavaScript and jQuery.
    * In your `images` folder, save whatever images you'd like to use in this exercise.
 
-6. Choose a game to build from your options below. 
+6. Choose a game to build from your options below.  -->
 
 ### Option One: Basic Quiz (Timed Form)
 
@@ -38,7 +38,7 @@ In this assignment, You'll create a Trivia game using JavaScript for the logic a
 
 ### Option Two: Advanced Assignment (Timed Questions)
 
-![Advanced](Images/2-advanced.jpg)
+<!-- ![Advanced](Images/2-advanced.jpg)
 
 **[Click Here to Watch the demo](advanced-trivia-demo.mov)**.
 
@@ -53,13 +53,13 @@ In this assignment, You'll create a Trivia game using JavaScript for the logic a
 
 * On the final screen, show the number of correct answers, incorrect answers, and an option to restart the game (without reloading the page).
 
-- - -
+- - - -->
 
-### Minimum Requirements
+<!-- ### Minimum Requirements
 
 Attempt to complete homework assignment as described in instructions. If unable to complete certain portions, please pseudocode these portions to describe what remains to be completed.
 
-- - -
+- - - -->
 
 ### Create a README.md
 
@@ -73,9 +73,9 @@ Add a `README.md` to your repository describing the project. Here are some resou
 
 ### Add To Your Portfolio
 
-After completing the homework please add the piece to your portfolio. Make sure to add a link to your updated portfolio in the comments section of your homework so the TAs can easily ensure you completed this step when they are grading the assignment. To receive an 'A' on any assignment, you must link to it from your portfolio.
+After completing the homewok please add the piece to your portfolio. Make sure to add a link to your updated portfolio in the comments section of your homework so the TAs can easily ensure you completed this step when they are grading the assignment. To receive an 'A' on any assignment, you must link to it from your portfolio.
 
-- - -
+<!-- - - -
 
 ### A Few Last Notes
 
@@ -85,4 +85,4 @@ After completing the homework please add the piece to your portfolio. Make sure 
 
 *If you have any questions about this project or the material we have covered, please post them in the community channels in slack so that your fellow developers can help you! If you're still having trouble, you can come to office hours for assistance from your instructor and TAs.
 
-  **Good Luck!**
+  **Good Luck!** -->
