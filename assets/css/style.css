@@ -14,13 +14,14 @@ body {
   min-width: 600px;
   font-weight: 200;
   font-size: 17px;
+  color: aliceblue;
 }
 
-.target-route {
+.blank-route {
   float: left;
   margin: 17px;
   margin-left: 20px;
-  color: aliceblue;
+  /* color: aliceblue; */
 }
 
 #return-panel.row {
@@ -52,8 +53,8 @@ p {
   height: 35px;
   background-color: white;
   border-radius: 50px;
-  padding: 3px;
-  border: dimgray;
+  /* padding: 3px; */
+  /* border: dimgray; */
   border-width: 1px;
 }
 
@@ -108,9 +109,9 @@ h2 {
 .textarea, #form, #area {
   /* position: relative; */
   border-radius: 10px;
-  height: 500px;
+  height: 400px;
   /* width: 300px; */
-  padding: 40px;
+  padding: 20px;
   font-size: 14px;
   overflow-y: scroll;
 }
