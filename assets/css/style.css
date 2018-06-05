@@ -1,27 +1,47 @@
 body {
-  background-color: aliceblue;
-  color: navy;
-  margin-left: 80px;
-  margin-top: 40px;
-  width: 820px;
-  height: 900px;
+  width: auto;
+  background-color: lightgray;
+  font-family: "Josefin Sans";
+}
+.navbar {
+  height: 40px;
+  border-radius: 0px;
+  background-color: rgb(37, 35, 35);
+  opacity: 1;
+  border: none;
+  width: auto;
+  margin-top: 0px;
+  min-width: 600px;
+  font-weight: 200;
+  font-size: 17px;
 }
 
-span {
+.target-route {
+  float: left;
+  margin: 17px;
   margin-left: 20px;
+  color: aliceblue;
 }
 
-.jumbotron {
-  width: 1000px;
-  height: 50px;
-  background-color: white;
-  border-radius: 10px;
-  float: center;
+#return-panel.row {
+  height: 400px;
+  width: 100%;
+  margin: 0px;
+  background-color: rgb(51, 49, 58);
 }
+
+#input-panel.row {
+  height: auto;
+  width: 100%;
+  margin: 0px;
+}
+
+p {
+  margin: 2px;
+}
+
 
 #trivia-form {
-  width: 900;
-  height: 75px;
   background-color: azure;
   border-radius: 10px;
   padding: 10px;
@@ -31,8 +51,71 @@ span {
   width: auto;
   height: 35px;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 50px;
   padding: 3px;
   border: dimgray;
   border-width: 1px;
+}
+
+/* #form {
+  width: auto;
+  height: auto;
+  border: 1px solid #a5a5a5;
+  padding: 20px;
+  /* background-color: #f3f3f3; */
+  /* border-radius: 3px; */
+  /* float: left; */
+  /* text-align: center; 
+  margin-left: 40px;
+  margin-top: 20px;
+  color: black;
+} */
+
+input {
+  margin: 1px 0;
+  padding: 5px;
+  height: 35px;
+  border-radius: 50px;
+}
+
+input#submit {
+  width: 30%;
+  height: 30px;
+  margin: 10px 15px 10px 0;
+  padding: 5px;
+  background-color: #3fb8e8;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 16px;
+}
+
+h2 {
+  font-family: "Josephin", sans-serif;
+  color: #006400;
+}
+
+.col-md-4 {
+  position: relative;
+  padding: 15px;
+  margin: 5px;
+  /* width: auto; */
+  min-width: 200px;
+  min-height: 200px;
+  color: lightgray;
+  background-color: rgb(147, 153, 173);
+}
+
+.textarea, #form, #area {
+  /* position: relative; */
+  border-radius: 10px;
+  height: 500px;
+  /* width: 300px; */
+  padding: 40px;
+  font-size: 14px;
+  overflow-y: scroll;
+}
+
+#options{
+  list-style: none;
+  list-style-type: none;
 }
