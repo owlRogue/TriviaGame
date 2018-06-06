@@ -16,7 +16,9 @@ body {
   font-size: 17px;
   color: aliceblue;
 }
-
+.wrapper {
+display: inline;
+}
 .blank-route {
   float: left;
   margin: 17px;
@@ -26,7 +28,7 @@ body {
 
 #return-panel.row {
   height: 400px;
-  width: 100%;
+  width: auto;
   margin: 0px;
   background-color: rgb(51, 49, 58);
 }

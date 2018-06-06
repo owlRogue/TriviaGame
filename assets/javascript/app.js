@@ -1,6 +1,12 @@
 // https://www.w3schools.com/jsref/prop_radio_form.asp
 // https://www.formget.com/create-form-using-jquery/
 
+window.onload = function() {
+    $(document).on("click", stopwatch.start);
+    // $("#stop").on("click", stopwatch.stop);
+    // $("#reset").on("click", stopwatch.reset);
+  };
+
 var topic = ["sport", "store", "color", "beverage", "hour of the day", "country"];
 var sport = ["skateboarding", "roller blading", "rugby", "snowboarding"];
 var store = ["Express","Uniqlo","H&M","Forenver 21"];
@@ -12,13 +18,86 @@ var country = ["Romania","Russia","Italy","Philippines"];
     var h3 = $("<h3>")
              $('#h3').text("KP Trivia");
     
-    var clock = $('<div>Time Remaining: </div>')
-    var time = "00:00"
-    $('#nav').append(clock);
-    $(clock).append(time);
+    var clock = $('#display');
+ 
+//  Variable that will hold our setInterval that runs the stopwatch
+var intervalId;
 
-$(document).ready(function() {
-    
+//prevents the clock from being sped up unnecessarily
+var clockRunning = false;
+
+// Our stopwatch object
+var stopwatch = {
+
+  time: 0,
+  lap: 1,
+
+  reset: function() {
+
+    stopwatch.time = 0;
+    stopwatch.lap = 1;
+
+    // DONE: Change the "display" div to "00:00."
+    $("#display").text("0:00");
+
+    // DONE: Empty the "laps" div.
+    $("#laps").text("");
+  },
+
+  start: function() {
+
+    // DONE: Use setInterval to start the count here and set the clock to running.
+    if (!clockRunning) {
+        intervalId = setInterval(stopwatch.count, 1800);
+        clockRunning = true;
+    }
+  },
+
+  stop: function() {
+
+    // DONE: Use clearInterval to stop the count here and set the clock to not be running.
+    clearInterval(intervalId);
+    clockRunning = false;
+  },
+
+  count: function() {
+
+    // DONE: increment time by 1, remember we cant use "this" here.
+    stopwatch.time--;
+
+    // DONE: Get the current time, pass that into the stopwatch.timeConverter function,
+    //       and save the result in a variable.
+    var converted = stopwatch.timeConverter(stopwatch.time);
+    console.log(converted);
+
+    // DONE: Use the variable we just created to show the converted time in the "display" div.
+    $("#display").text(converted);
+  },
+
+  timeConverter: function(t) {
+
+    var minutes = Math.floor(t / 60);
+    var seconds = t - (minutes * 60);
+
+    if (seconds < 10) {
+      seconds = "0" + seconds;
+    }
+
+    if (minutes === 0) {
+      minutes = "00";
+    }
+    if (minutes < 0) {
+        minutes = minutes;
+      }
+    else if (minutes < 10) {
+      minutes = "0" + minutes;
+    }
+    return minutes + ":" + seconds;
+  }
+};
+
+$(document).ready(function() {    
+
     var score = 0;
     
     var sub = $("<p>").text("Hey you! How well do you think you know me?");
